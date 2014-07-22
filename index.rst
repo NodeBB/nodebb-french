@@ -1,9 +1,9 @@
 .. image:: https://i.imgur.com/3yj1n6N.png
 
 |
-**NodeBB** est une plate-forme de discussion de future génération qui utilise les sockets web pour des réactions instantanées et des notifications en temps réel. NodeBB forums a de nombreuses fonctionnalités modernes à découvrir comme un réseau social et des discussions en continu.
+**NodeBB** est une plate-forme de discussion de nouvelle génération qui utilise les sockets web pour des réactions instantanées et des notifications en temps réel. NodeBB propose de nombreuses fonctionnalités modernes à découvrir comme un réseau social ou des discussions en continu.
 
-NodeBB est un projet open source qui peut être "forké" sur `GitHub <https://github.com/NodeBB/NodeBB/>`_. N'oubliez pas de vérifier les façons que vous pouvez aider à contribuer à ce projet, les traductions, demandes d'ajouts, et en parler à vos amis.
+NodeBB est un projet open source qui peut être "forké" sur `GitHub <https://github.com/NodeBB/NodeBB/>`_. N'oubliez pas de jeter un coup d'oeil aux façons dont vous pouvez nous aider à contribuer à ce projet ou aux traductions et parlez-en à vos amis.
 
 Table of Contents
 =================
