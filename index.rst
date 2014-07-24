@@ -5,12 +5,12 @@
 
 NodeBB est un projet open source qui peut être "forké" sur `GitHub <https://github.com/NodeBB/NodeBB/>`_. N'oubliez pas de vérifier les façons que vous pouvez aider à contribuer à ce projet, les traductions, demandes d'ajouts, et en parler à vos amis.
 
-Table of Contents
+Table des matières
 =================
 
 .. _installing:
 
-Installing NodeBB
+Installer NodeBB
 -----------------
 
 .. toctree::
@@ -22,7 +22,7 @@ Installing NodeBB
 
 .. _configuring:
 
-Configuring NodeBB
+Configurer NodeBB
 ------------------
 
 .. toctree::
@@ -31,7 +31,7 @@ Configuring NodeBB
     configuring/databases
     configuring/proxies
 
-Running NodeBB
+Utiliser NodeBB
 ------------------
 
 .. toctree::
@@ -39,7 +39,7 @@ Running NodeBB
 
     running/index
 
-Upgrading NodeBB
+Mettre à jour NodeBB
 ------------------
 
 .. toctree::
@@ -47,7 +47,7 @@ Upgrading NodeBB
 
     upgrading/index
 
-Administrating NodeBB
+Administrer NodeBB
 ---------------------
 
 .. toctree::
@@ -57,7 +57,7 @@ Administrating NodeBB
     admin/sso
     admin/uploads
 
-Contributing to NodeBB
+Contribuer à NodeBB
 ----------------------
 
 .. toctree::
@@ -66,7 +66,7 @@ Contributing to NodeBB
     contributing/style-guide
     modules/index
 
-Plugin System
+Système de Plugins
 -------------
 
 .. toctree::
@@ -76,7 +76,7 @@ Plugin System
     plugins/hooks
     plugins/settings
 
-Widgets System
+Système de Widgets
 --------------
 
 .. toctree::
@@ -84,7 +84,7 @@ Widgets System
 
     widgets/create
 
-Theming Engine
+Moteur de thèmes
 --------------
 
 .. toctree::
@@ -94,7 +94,7 @@ Theming Engine
     themes/templates
 
 
-Developer's Resources
+Ressources pour les développeurs
 ---------------------
 
 .. toctree::
@@ -102,7 +102,7 @@ Developer's Resources
 
     resources
 
-Helping out the NodeBB Project
+Aider le projet NodeBB
 ------------------------------
 
 .. toctree::
@@ -110,7 +110,7 @@ Helping out the NodeBB Project
 
     helping/index
 
-Troubleshooting / Help
+Aide / Bugs fréquents
 ----------------------
 
 .. toctree::
@@ -118,7 +118,7 @@ Troubleshooting / Help
 
     help/help
 
-Indices and tables
+Indices et tables
 ==================
 
 * :ref:`genindex`
