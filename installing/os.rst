@@ -1,12 +1,11 @@
-NodeBB Installation by OS
+Installation de NodeBB par OS
 =========================
 
-The following are step-by-step guides to help you get up and running.
+Les guides suivants vous permettront de préparer et de lancer votre installation.
 
 .. note::
 
-    If your operating system is not listed here, please feel free to request a guide on our `community <https://community.nodebb.org>`_ or even better yet, submit one here.
-
+    Si votre système d'exploitation n'est pas listé ici, n'hésitez pas à demander un guide sur notre `communauté <https://community.nodebb.org>`_ ou mieux encore, soumettez-en un ici !
 
 
 .. toctree::
