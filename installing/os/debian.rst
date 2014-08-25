@@ -2,25 +2,25 @@
 Debian
 ======
 
-The current Ubuntu guide is not completely compatible with Debian and there are some specificities and especially the NodeJS installation, and how to get latest Redis.
+Le guide actuel pour Ubuntu n'est pas totalement compatible avec Debian, il y à de nombreuses choses qui change, notament l'instalation de NodeJS, et installer Redis.
 
-Requirements
+Requis
 ^^^^^^^^^^^^^^^^^^^^^^^
-NodeBB requires these software to be installed:
+NodeBB nécessite ces logiciels: 
 
-* Node.js at least 0.10 and greater
-* Redis, version 2.6 or greater
-* cURL installed, just do ``sudo apt-get install curl`` in order to install it
+* Node.js, au moins 0.10 et plus 
+* Redis, version 2.6 ou supérieure 
+* CURL installé, il suffit de faire `` sudo apt-get install curl`` afin de l'installer
 
-Node.js installation
+Installation de Node.js
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Debian 7 and Debian 6 and older doesn't have `nodejs` packages included by default, but there are some solutions to install Node.js on your Debian distribution.
+Debian 7 et Debian 6 et plus vieux ne possède pas de paquets `nodejs` par défaut, mais il existe quelques solutions pour installer Node.js sur votre distribution Debian.
 
 Wheezy Backport :
 ------------------
 
-This solution is **ONLY for Debian 7**, simply run the following **as root** :
+Cette solution est ** SEULEMENT pour Debian 7 **, vous n'avez plus qu'à lancer les commande suivantes **en tant que root**:
 
 .. code:: bash
 
@@ -28,7 +28,7 @@ This solution is **ONLY for Debian 7**, simply run the following **as root** :
 	$ apt-get update
 
 
-To install Node.js + NPM, run this :
+Pour installer Node.js + NPM, lancez ça :
 
 .. code:: bash
 
@@ -36,12 +36,12 @@ To install Node.js + NPM, run this :
 	$ curl --insecure https://www.npmjs.org/install.sh | bash
 
 
-The following install a Node.js version who is greater than 0.8 (at 29 March 2014 : 0.10.21)
+Ceci installera une version de Node.js qui sera supérieur à la 0.8 (at 29 Mars 2014 : 0.10.21)
 
-Compiling from the source :
+Compilation à partir des sources :
 ------------------
 
-This solution is for Debian 6 (Squeeze) and greater, in order to install NodeJS, run this **as root** :
+Cette solution est poue **Debian 6 ou supérieur **, vous n'avez plus qu'à lancer les commande suivantes **en tant que root**:
 
 .. code:: bash
 
@@ -54,28 +54,27 @@ This solution is for Debian 6 (Squeeze) and greater, in order to install NodeJS,
 	$ sudo dpkg -i node_*
 
 
-Get latest Software via DotDeb
+Via DotDeb
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Dotdeb is a repository containing packages to turn your Debian boxes into powerful, stable and up-to-date LAMP servers.
-
+Dotdeb est un dépôt contenant des paquets permettant de transformer vos machines Debian en serveurs LAMP puissants, stables et mis à jour.
 * Nginx,
-* PHP 5.4 and 5.3 (useful PHP extensions : APC, imagick, Pinba, xcache, Xdebug, XHpro..)
+* PHP 5.4 and 5.3 ( des extensions PHP utiles : APC, imagick, Pinba, xcache, Xdebug, XHpro..)
 * MySQL 5.5,
 * Percona toolkit,
 * Redis,
 * Zabbix,
 * Passenger…
 
-Dotdeb supports :
+Dotdeb supporte :
 
-* Debian 6.0 “Squeeze“ and 7 “Wheezy“
-* both amd64 and i386 architectures
+* Debian 6.0 “Squeeze“ et 7 “Wheezy“
+* Les architectures amd64 (64bit) et i386 (32bit)
 
 Debian 7 (Wheezy) :
 ------------------
 
-For the complete DotDeb repositories :
+Pour le dépôt DotDeb au complet :
 
 .. code:: bash
 
@@ -83,7 +82,7 @@ For the complete DotDeb repositories :
 	$ sudo echo 'deb-src http://packages.dotdeb.org wheezy all' >> /etc/apt/sources.list
 
 
-After this, add the following GPC keys :
+Après ça, ajouter les clés GPC suivantes :
 
 .. code:: bash
 
@@ -91,7 +90,7 @@ After this, add the following GPC keys :
 	$ sudo apt-key add dotdeb.gpg
 
 
-And update your package source :
+Et mettez à jours vos sources :
 
 .. code:: bash
 
@@ -101,7 +100,7 @@ And update your package source :
 Debian 6 (Squeeze)
 ------------------
 
-For the complete DotDeb repositories :
+Pour le dépôt DotDeb au complet :
 
 .. code:: bash
 
@@ -109,71 +108,69 @@ For the complete DotDeb repositories :
 	$ sudo echo 'deb-src http://packages.dotdeb.org squeeze all' >> /etc/apt/sources.list
 
 
-After this, add the following GPC keys :
-
+Après ça, ajouter les clés GPC suivantes :
 .. code:: bash
 
 	$ wget http://www.dotdeb.org/dotdeb.gpg
 	$ sudo apt-key add dotdeb.gpg
 
 
-And update your package source :
+Et mettez à jours vos sources :
 
 .. code:: bash
 
 	$ sudo apt-get update
 
 
-Installing NodeBB
+Installation de NodeBB
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Now, we have NodeJS installed and Redis ready to be installed, run this command for install the base software stack :
-
+Maintenant, nous avons installé NodeJS et Redis est prêt à être installé, lancez cette commande pour installer les logiciels de base:
 .. code:: bash
 
 	$ apt-get install redis-server imagemagick git
 
 
-Next clone this repository :
+Ensuite on clône le dépôt :
 
 .. code:: bash
 
 	$ cd /path/to/nodebb/install/location
 	$ git clone git://github.com/NodeBB/NodeBB.git nodebb
 
-Now we are going to install all dependencies for NodeBB via NPM :
+Maintenant, nous allons installer toutes les dépendances de NodeBB via NPM :
 
 .. code:: bash
 
 	$ cd /path/to/nodebb/install/location/nodebb (or if you are on your install location directory run : cd nodebb)
 	$ npm install
 
-Install NodeBB by running the app with `--setup` flag :
+Puis installer NodeBB en exécutant l'application avec `--setup`:
 
 .. code:: bash
 
 	$ ./nodebb setup
 
 
-1. `URL of this installation` is either your public ip address or your domain name pointing to that ip address.  
-    **Example:** ``http://0.0.0.0`` or ``http://example.org``  
+1. `URL of this installation` : soit votre adresse IP publique ou le nom de domaine pointant vers cette adresse IP.  
+    **Exemple:** ``http://0.0.0.0`` ou ``http://exemple.org``  
 
-2. ``Port number of your NodeBB`` is the port needed to access your site:  
-    **Note:** If you do not proxy your port with something like nginx then port 80 is recommended for production.  
-3. If you used the above steps to setup your redis-server then use the default redis settings.
+2. ``Port number of your NodeBB`` le port nécéssaire pour acceder a votre site:  
+    **Note:** Si vous ne comptez pas utiliser Nginx comme proxy, choisissez le port 80 pour mettre votre forum en production.  
+3. Si vous avez installer Redis avec les solutions ci dessus, laissez les paramètres par défaut pour la suite.
 
-And after all.. let's run the NodeBB forum
+Et enfin.. lançon notre forum NodeBB !
 
 .. code:: bash
 
 	$ ./nodebb start
 
 
-**Note:** If you NodeBB or your server crash, your NodeBB instance will not reboot (snap), this is why you should take a look at the other way to start your NodeBB instance with helper programs such as ``supervisor`` and ``forever``, just :doc:`take a look here <../../running/index>` it's simple as a click!
+**Note:** Si le forum crash, NodeBB ne vas pas (hélas) se redémarrer seul. Si vous avez besoin d'un redémarrage automatique, jettez un oeil au solutions suivantes : ``supervisor`` et ``forever``,  :doc:`ICI <../../running/index>`
 
 Extras, tips and Advice
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-You should secure your NodeBB installation, `take a look here <https://github.com/NodeBB/NodeBB#securing-nodebb>`_.
+Vous pouvez sécuriser votre installation de NodeBB, `jettez un oeil ici <https://github.com/NodeBB/NodeBB#securing-nodebb>`_.
 
-You should use Nginx (or similar) in order to reverse proxy your NodeBB installation on the port 80, :doc:`take a look here <../../configuring/proxies>`
+Vous pouvez utiliser Nginx (ou semblable) pour servir de proxy à votre installation de NodeBB, afin de le rendre accessible depuis le port 80, :doc:`jettez un oeil ici <../../configuring/proxies>`
