@@ -2,7 +2,7 @@
 Debian
 ======
 
-Le guide actuel pour Ubuntu n'est pas totalement compatible avec Debian, de nombreuses choses sont différentes notamment l'instalation de NodeJS et Redis.
+Le guide actuel pour Ubuntu n'est pas totalement compatible avec Debian, de nombreuses choses sont différentes notamment l'installation de NodeJS et Redis.
 
 Requis
 ^^^^^^^^^^^^^^^^^^^^^^^
