@@ -5,7 +5,7 @@ Les guides suivants vous permettront de préparer et de lancer votre installatio
 
 .. note::
 
-    Si votre système d'exploitation n'est pas listé ici, n'hésitez pas à demander un guide sur notre `communauté <https://community.nodebb.org>`_ ou mieux encore, soumettez-en un ici !
+    Si votre système d'exploitation n'est pas listé ici, n'hésitez pas à demander un guide sur notre `communauté <https://community.nodebb.org>`_ ou mieux encore, proposez le votre !
 
 
 .. toctree::
