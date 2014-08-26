@@ -2,11 +2,11 @@
 Debian
 ======
 
-Le guide actuel pour Ubuntu n'est pas totalement compatible avec Debian, il y à de nombreuses choses qui change, notament l'instalation de NodeJS, et installer Redis.
+Le guide actuel pour Ubuntu n'est pas totalement compatible avec Debian, de nombreuses choses sont différentes notamment l'instalation de NodeJS et Redis.
 
 Requis
 ^^^^^^^^^^^^^^^^^^^^^^^
-NodeBB nécessite ces logiciels: 
+Les pré-requis de NodeBB : 
 
 * Node.js, au moins 0.10 et plus 
 * Redis, version 2.6 ou supérieure 
@@ -15,12 +15,12 @@ NodeBB nécessite ces logiciels:
 Installation de Node.js
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Debian 7 et Debian 6 et plus vieux ne possède pas de paquets `nodejs` par défaut, mais il existe quelques solutions pour installer Node.js sur votre distribution Debian.
+Debian 7, 6 et antérieurs ne possède pas de paquets `nodejs` par défaut mais il existe quelques solutions pour installer Node.js sur votre distribution Debian.
 
 Wheezy Backport :
 ------------------
 
-Cette solution est ** SEULEMENT pour Debian 7 **, vous n'avez plus qu'à lancer les commande suivantes **en tant que root**:
+Cette solution est ** SEULEMENT pour Debian 7 **, vous n'avez plus qu'à lancer les commande suivantes **en tant que super utilisateur**:
 
 .. code:: bash
 
@@ -28,7 +28,7 @@ Cette solution est ** SEULEMENT pour Debian 7 **, vous n'avez plus qu'à lancer 
 	$ apt-get update
 
 
-Pour installer Node.js + NPM, lancez ça :
+Pour installer Node.js + NPM, exécutez ces commandes :
 
 .. code:: bash
 
@@ -36,12 +36,12 @@ Pour installer Node.js + NPM, lancez ça :
 	$ curl --insecure https://www.npmjs.org/install.sh | bash
 
 
-Ceci installera une version de Node.js qui sera supérieur à la 0.8 (at 29 Mars 2014 : 0.10.21)
+Ceci installera une version de Node.js qui sera supérieur à la 0.8 (29 Mars 2014 : 0.10.21)
 
-Compilation à partir des sources :
+Compilation à partir du code source :
 ------------------
 
-Cette solution est poue **Debian 6 ou supérieur **, vous n'avez plus qu'à lancer les commande suivantes **en tant que root**:
+Cette solution est uniquement recommandé pour **Debian 6 ou supérieur **, vous n'avez plus qu'à lancer les commande suivantes **en tant que super utilisateur**:
 
 .. code:: bash
 
@@ -82,7 +82,7 @@ Pour le dépôt DotDeb au complet :
 	$ sudo echo 'deb-src http://packages.dotdeb.org wheezy all' >> /etc/apt/sources.list
 
 
-Après ça, ajouter les clés GPC suivantes :
+Après ça, ajoutez les clés GPC suivantes :
 
 .. code:: bash
 
@@ -90,7 +90,7 @@ Après ça, ajouter les clés GPC suivantes :
 	$ sudo apt-key add dotdeb.gpg
 
 
-Et mettez à jours vos sources :
+Et mettez à jour vos sources :
 
 .. code:: bash
 
@@ -108,14 +108,14 @@ Pour le dépôt DotDeb au complet :
 	$ sudo echo 'deb-src http://packages.dotdeb.org squeeze all' >> /etc/apt/sources.list
 
 
-Après ça, ajouter les clés GPC suivantes :
+Après ça, ajoutez les clés GPC suivantes :
 .. code:: bash
 
 	$ wget http://www.dotdeb.org/dotdeb.gpg
 	$ sudo apt-key add dotdeb.gpg
 
 
-Et mettez à jours vos sources :
+Et mettez à jour vos sources :
 
 .. code:: bash
 
@@ -125,7 +125,7 @@ Et mettez à jours vos sources :
 Installation de NodeBB
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Maintenant, nous avons installé NodeJS et Redis est prêt à être installé, lancez cette commande pour installer les logiciels de base:
+Maintenant que nous avons installé NodeJS et Redis, NodeBB est prêt à être installé, lancez cette commande pour installer les logiciels de base:
 .. code:: bash
 
 	$ apt-get install redis-server imagemagick git
@@ -138,14 +138,14 @@ Ensuite on clône le dépôt :
 	$ cd /path/to/nodebb/install/location
 	$ git clone git://github.com/NodeBB/NodeBB.git nodebb
 
-Maintenant, nous allons installer toutes les dépendances de NodeBB via NPM :
+Maintenant nous allons installer toutes les dépendances de NodeBB via NPM :
 
 .. code:: bash
 
 	$ cd /path/to/nodebb/install/location/nodebb (or if you are on your install location directory run : cd nodebb)
 	$ npm install
 
-Puis installer NodeBB en exécutant l'application avec `--setup`:
+Et enfin lancez la paramétrisation de NodeBB en exécutant l'application avec `--setup`:
 
 .. code:: bash
 
@@ -159,7 +159,7 @@ Puis installer NodeBB en exécutant l'application avec `--setup`:
     **Note:** Si vous ne comptez pas utiliser Nginx comme proxy, choisissez le port 80 pour mettre votre forum en production.  
 3. Si vous avez installer Redis avec les solutions ci dessus, laissez les paramètres par défaut pour la suite.
 
-Et enfin.. lançon notre forum NodeBB !
+Et enfin.. exécutez notre forum NodeBB !
 
 .. code:: bash
 
