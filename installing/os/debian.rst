@@ -20,7 +20,7 @@ Debian 7, 6 et antérieurs ne possède pas de paquets `nodejs` par défaut mais 
 Wheezy Backport :
 ------------------
 
-Cette solution est ** SEULEMENT pour Debian 7 **, vous n'avez plus qu'à lancer les commande suivantes **en tant que super utilisateur**:
+Cette solution est ** SEULEMENT pour Debian 7 **, vous n'avez plus qu'à lancer les commande suivantes en tant que super utilisateur**:
 
 .. code:: bash
 
@@ -28,7 +28,7 @@ Cette solution est ** SEULEMENT pour Debian 7 **, vous n'avez plus qu'à lancer 
 	$ apt-get update
 
 
-Pour installer Node.js + NPM, exécutez ces commandes :
+Pour installer Node.js et NPM, executez ces commandes :
 
 .. code:: bash
 
@@ -41,7 +41,7 @@ Ceci installera une version de Node.js qui sera supérieur à la 0.8 (29 Mars 20
 Compilation à partir du code source :
 ------------------
 
-Cette solution est uniquement recommandé pour **Debian 6 ou supérieur **, vous n'avez plus qu'à lancer les commande suivantes **en tant que super utilisateur**:
+Cette solution est uniquement recommandé pour **Debian 6 ou supérieur** , vous n'avez plus qu'à lancer les commande suivantes **en tant que super utilisateur**:
 
 .. code:: bash
 
@@ -166,9 +166,9 @@ Et enfin.. exécutez notre forum NodeBB !
 	$ ./nodebb start
 
 
-**Note:** Si le forum crash, NodeBB ne vas pas (hélas) se redémarrer seul. Si vous avez besoin d'un redémarrage automatique, jettez un oeil au solutions suivantes : ``supervisor`` et ``forever``,  :doc:`ICI <../../running/index>`
+**Note:** Si le forum crash, NodeBB ne se redémarrera pas seul. Si vous avez besoin d'un redémarrage automatique, jettez un oeil au solutions suivantes : ``supervisor`` et ``forever``,  :doc:`ICI <../../running/index>`
 
-Extras, tips and Advice
+Extras
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 Vous pouvez sécuriser votre installation de NodeBB, `jettez un oeil ici <https://github.com/NodeBB/NodeBB#securing-nodebb>`_.
