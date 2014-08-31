@@ -20,7 +20,7 @@ Debian 7, 6 et antérieurs ne possède pas de paquets `nodejs` par défaut mais 
 Wheezy Backport :
 ------------------
 
-Cette solution est ** SEULEMENT pour Debian 7 **, vous n'avez plus qu'à lancer les commande suivantes en tant que super utilisateur**:
+Cette solution est **SEULEMENT pour Debian 7** , vous n'avez plus qu'à lancer les commande suivantes en tant que super utilisateur**:
 
 .. code:: bash
 
