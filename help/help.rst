@@ -18,16 +18,16 @@ Vous pouvez entrer la commande ``./nodebb`` pour lancer l'executable qui s'occup
 	Welcome to NodeBB
 	Usage: ./nodebb {start|stop|reload|restart|log|setup|reset|upgrade|dev|watch}
 
-	start    Start the NodeBB server *(Demarre le serveur NodeBB)*
-	stop     Stops the NodeBB server *(Arrête le le serveur NodeBB)*
-	reload   Restarts NodeBB *(Redemarre NodeBB)*
-	restart  Restarts NodeBB *(Redemarre aussi NodeBB)*
-	log      Opens the logging interface (useful for debugging) *(Permet de voir les logs, pour fournir de quoi debug par exemple, si vous rencontrez un prolbème)*
-	setup    Runs the NodeBB setup script *(Lance le script d'installation de NodeBB, utile aussi pour modifier des choses comme la base de donnée ou les ports...)
-	reset    Disables all plugins, restores the default theme. *(Désactive* ***TOUT*** *les plugins, et remet le thème par défaut)* 
-	upgrade  Run NodeBB upgrade scripts, ensure packages are up-to-date *(Lance le script de mise a jour, afin de verifier que les packtages (plugins, theme, dépendances...) soit à jour* ***Note : Ne permet pas de mettre a jour NodeBB lui même ! Voir le guide d'upgrade !*** *)*
-	dev      Start NodeBB in interactive development mode *(Demarre NodeBB en mode développement, pratique pour developper un plugins)*
-	watch    Start NodeBB in development mode and watch for changes *(Demarre NodeBB en mode développement aussi, et regarde constament si il y a des changements de fait)*
+	start    Demarre le serveur NodeBB
+	stop     Arrête le le serveur NodeBB
+	reload   Redemarre NodeBB
+	restart  RRedemarre aussi NodeBB
+	log      Permet de voir les logs, pour fournir de quoi debug par exemple, si vous rencontrez un problème
+	setup    Lance le script d'installation de NodeBB, utile aussi pour modifier des choses comme la base de donnée ou les ports...
+	reset    Désactive TOUT les plugins, et remet le thème par défaut
+	upgrade  Lance le script de mise a jour, afin de verifier que les packtages (plugins, theme, dépendances...) soit à jour. Notez : Ne permet pas de mettre a jour NodeBB lui même ! Voir le guide d'upgrade !
+	dev      Demarre NodeBB en mode développement, pratique pour developper un plugins
+	watch    Demarre NodeBB en mode développement aussi, et regarde constament si il y a des changements de fait
 
 How do I upgrade my NodeBB?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
