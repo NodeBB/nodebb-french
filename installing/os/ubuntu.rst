@@ -6,7 +6,7 @@ Pour commencer, installons nos logiciels de base:
 
 .. code:: bash
 
-	$ sudo apt-get install git nodejs redis-server imagemagick npm
+	$ sudo apt-get install git nodejs nodejs-legacy npm redis-server imagemagick npm
 
 
 Si vous souhaitez utiliser MongoDB, LevelDB ou tout autre base de données à la place de Redis, veuillez consulter la section :doc:`Configuration de base de données <../configuring/databases>`.
