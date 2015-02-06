@@ -1,7 +1,7 @@
-Configuring Web Server / Proxies
+Configurer un serveur web / un proxy
 ================================
 
-Here a few options that you can use to proxy your NodeBB forum.
+QUelques options que vous pouvez utiliser comme proxy pour votre forum NodeBB.
 
 .. toctree::
     :hidden:
